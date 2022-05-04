@@ -82,35 +82,107 @@
                     <label for="name1">Nome:</label>
                     <input type="text" name="" id="name1">
                 </div>
-                <fieldset>
+                <fieldset id="radios">
                     <div id="radio1">
-                        <input type="radio" id="anao" name="nacao" value="anao" checked>
-                        <label for="anao">Anão</label>
-                        <input type="radio" id="hobbit" name="nacao" value="hobbit">
-                        <label for="hobbit">Hobbit</label>
-                        <input type="radio" id="cavaleiro" name="nacao" value="cavaleiro">
-                        <label for="cavaleiro">Cavaleiro de Rohan</label>
-                        <input type="radio" id="guerreiro" name="nacao" value="guerreiro">
-                        <label for="guerreiro">Guerreiro de Gondor</label>
+                        <div>
+                            <input type="radio" id="anao" name="nacao" value="anao" checked>
+                            <label for="anao">Anão</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="hobbit" name="nacao" value="hobbit">
+                            <label for="hobbit">Hobbit</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cavaleiro" name="nacao" value="cavaleiro">
+                            <label for="cavaleiro">Cavaleiro de Rohan</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="guerreiro" name="nacao" value="guerreiro">
+                            <label for="guerreiro">Guerreiro de Gondor</label>
+                        </div>
                     </div>
                     <div id="radio2">
-                        <input type="radio" id="elfoF" name="nacao" value="elfoF">
-                        <label for="elfoF">Elfo da Floresta</label>
-                        <input type="radio" id="elfoL" name="nacao" value="elfoL">
-                        <label for="elfoL">Elfo de Lothlórien</label>
-                        <input type="radio" id="orc" name="nacao" value="orc">
-                        <label for="orc">Orc Snaga</label>
-                        <input type="radio" id="uruk" name="nacao" value="uruk">
-                        <label for="uruk">Uruk-hai</label>
+                        <div>
+                            <input type="radio" id="elfoF" name="nacao" value="elfoF">
+                            <label for="elfoF">Elfo da Floresta</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="elfoL" name="nacao" value="elfoL">
+                            <label for="elfoL">Elfo de Lothlórien</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="orc" name="nacao" value="orc">
+                            <label for="orc">Orc Snaga</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="uruk" name="nacao" value="uruk">
+                            <label for="uruk">Uruk-hai</label>
+                        </div>
                     </div>
-
                 </fieldset>
+                <fieldset id="habilidades">
+                    <div>
+                        <div id="div-forca">
+                            <label for="forca">Força</label>
+                            <input type="number" name="" id="forca">
+                        </div>
+                        <div id="div-precisao">
+                            <label for="precisao">Precisão</label>
+                            <input type="number" name="" id="precisao">
+                        </div>
+                        <div id="div-velocidade">
+                            <label for="velocidade">Velocidade</label>
+                            <input type="number" name="" id="velocidade">
+                        </div>
+                        <div id="div-armadura">
+                            <label for="armadura">Armadura</label>
+                            <input type="number" name="" id="armadura">
+                        </div>
+                        <div id="div-recuperacao">
+                            <label for="recuperacao">Recuperação</label>
+                            <input type="number" name="" id="recuperacao">
+                        </div>
+                    </div>
+                </fieldset>
+                <input id="btn-criar-personagem" type="button" value="Criar Personagem">
 
 
             </div>
+            <h1 id="add">+</h1>
+            <h1 id="remover">-</h1>
+        </section>
+        <section id="destino">
+
         </section>
         </div>
+        <script>
+            var adicionar = document.getElementById('add');
+            adicionar.addEventListener('click', duplicarCampos)
+            var remover = document.getElementById('remover');
+            remover.addEventListener('click', removerCampos)
 
+            function duplicarCampos() {
+
+
+
+                var clone = document.getElementById('criar-personagem').cloneNode(true);
+                var destino = document.getElementById('destino');
+                destino.appendChild(clone);
+
+                var camposClonados = clone.querySelectorAll("imput label div h1");
+                console.log(camposClonados)
+
+                for (i = 0; i < camposClonados.length; i++) {
+                    camposClonados[i].value = '';
+                }
+
+            }
+
+            function removerCampos(id) {
+                var node1 = document.getElementById('destino');
+                node1.removeChild(node1.childNodes[0]);
+            }
+        </script>
 </body>
 
 </html>
