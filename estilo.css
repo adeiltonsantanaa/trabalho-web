@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Oleo+Script:wght@700&display=swap');
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .header {
@@ -62,6 +64,7 @@ p {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    width: 100%;
 }
 
 .corpo-inicial {
@@ -70,12 +73,99 @@ p {
     justify-content: space-around;
     padding-top: 50px;
 }
+
 #primeiroParagrafo {
     position: absolute;
-    width: 25%;
-    left: 5%;
-    top: 20%;
+    left: 30%;
+    top: 19%;
+    width: 42%;
+    font-family: 'Libre Baskerville', serif;
 }
+
+h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 200%;
+}
+
 video {
     position: absolute;
+    left: 30%;
+    top: 42%;
+    width: 42%;
+}
+
+#titulo-principal {
+    width: 42%;
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    text-align: center;
+}
+
+#paragrafo-sec-inferior {
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    top: 120%;
+}
+
+#paragrafo-sec-inferior2 {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 120%;
+}
+
+#titulo-jogabilidade {
+    position: absolute;
+    left: 18%;
+    top: 110%;
+}
+
+#titulo-personagens {
+    position: absolute;
+    right: 18%;
+    top: 110%;
+}
+
+#lista-personagens {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    top: 148%;
+}
+
+#titulo-nacao {
+    position: absolute;
+    left: 21%;
+    top: 164%;
+}
+
+#paragrafo-nacoes {
+    position: absolute;
+    width: 40%;
+    left: 5%;
+    top: 174%;
+}
+
+#div-criar-personagem {
+    position: absolute;
+    /* bottom: 3%; */
+    width: 50%;
+    top: 230%;
+    height: 50%;
+    background-color: blue;
+    left: 25%;
+}
+
+#checkLabel {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#nome {
+    position: absolute;
+    top: 21%;
+    left: 5%;
 }
