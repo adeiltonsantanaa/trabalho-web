@@ -35,8 +35,7 @@
                         Tanto O Senhor dos Anéis como O Hobbit foram adaptados para cinema, tornando-se grandes sucessos de bilheteria. Cabe frisar que, ainda hoje, os direitos sobre a obra são detidos pela Tolkien Enterprises. Porém, a dinâmica do jogo
                         é toda definida neste documento, conforme as próximas seções.
                     </p>
-                    <video width="600px" height="350px" controls>
-                            <source src="assets/SEI - 8.0.0.77.138082 - Google Chrome 2022-04-19 10-13-21.mp4" type="video/mp4"></video>
+                    <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/QM5orsU0yVI" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
                     </video>
                 </div>
             </div>
@@ -148,26 +147,22 @@
 
 
             </div>
-            <h1 id="add">+</h1>
-            <h1 id="remover">-</h1>
+            <button id="add" onclick="duplicarCampos()">Adicionar</button>
+            <button id="remover" onclick="removerCampos()">Remover</button>
         </section>
-        <section id="destino">
+        <section id="destino" class="aparecer">
 
         </section>
         </div>
         <script>
-            var adicionar = document.getElementById('add');
-            adicionar.addEventListener('click', duplicarCampos)
-            var remover = document.getElementById('remover');
-            remover.addEventListener('click', removerCampos)
-
             function duplicarCampos() {
 
-
+                var destino = document.getElementById('destino');
+                destino.classList.remove('aparecer');
 
                 var clone = document.getElementById('criar-personagem').cloneNode(true);
-                var destino = document.getElementById('destino');
-                destino.appendChild(clone);
+
+                destino.append(clone);
 
                 var camposClonados = clone.querySelectorAll("imput label div h1");
                 console.log(camposClonados)
@@ -178,9 +173,10 @@
 
             }
 
-            function removerCampos(id) {
+            function removerCampos() {
                 var node1 = document.getElementById('destino');
                 node1.removeChild(node1.childNodes[0]);
+
             }
         </script>
 </body>

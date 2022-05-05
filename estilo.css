@@ -6,20 +6,31 @@
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+    color: #fff;
 }
 
 .header {
     padding: 20px;
-    background-color: rgb(43, 43, 49);
+    background-color: #000000;
 }
 
 li {
     list-style-type: none;
 }
 
+button {
+    background-color: black;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 section {
     max-width: 100%;
     height: 100vh;
+    background-image: url(assets/Hellfire_abstract_illustration_2019_Design_Photo\ Wallpaper_1920x1080[10wallpaper.com].jpg);
 }
 
 header {
@@ -69,7 +80,6 @@ p {
 
 .corpo-inicial {
     display: flex;
-    background-color: rgb(255, 255, 255);
     justify-content: space-around;
     padding-top: 50px;
 }
@@ -87,11 +97,12 @@ h1 {
     font-size: 200%;
 }
 
-video {
+iframe {
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 42%;
-    width: 42%;
+    width: 50%;
+    height: 50%;
 }
 
 #titulo-principal {
@@ -179,7 +190,8 @@ video {
     /* background-color: blue; */
     left: 25%;
     border-radius: 20px;
-    border: 4px solid #000000;
+    /* border: 4px solid #000000; */
+    background-color: rgb(106, 41, 1, 0.8);
 }
 
 #checkLabel {
@@ -245,16 +257,32 @@ video {
     text-align: center;
     font-family: 'Oleo Script';
     font-size: x-large;
+    background-color: black;
+    border: none;
+}
+
+#btn-criar-personagem:hover {
+    cursor: pointer;
 }
 
 #add {
     position: relative;
-    left: 50%;
-    top: 30%;
+    width: 5%;
+    left: 45%;
+    top: 25%;
+    height: 5%;
+    text-align: center;
 }
 
 #remover {
     position: relative;
-    left: 55%;
-    top: 30%;
+    width: 5%;
+    left: 45%;
+    top: 25%;
+    height: 5%;
+    text-align: center;
+}
+
+.aparecer {
+    display: none;
 }
