@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <title>Batalha da Terra Média</title>
 </head>
 
@@ -14,11 +15,11 @@
             <div class="header">
                 <nav id="nav-header">
                     <div class="menus">
-                        <span class="fotoNavLateral"><img class="fotoNavLateral1" src="css/Screenshot_1.png"/></span>
+                        <span class="fotoNavLateral"><img class="fotoNavLateral1" src="assets/download.png"/></span>
                         <ul id="lista-header">
                             <li class="menu"><a class="menu1" href="#section-inicial">INICIO</a></li>
-                            <li class="menu"><a class="menu1" href="#jogabilidade">JOGABILIDADE E PERSONAGENS</a></li>
-                            <li class="menu"><a class="menu1" href="#criar-personagem">CRIAR PERSONAGENS</a></li>
+                            <li class="menu"><a class="menu1" href="paginas/personagens.html">JOGABILIDADE E PERSONAGENS</a></li>
+                            <li class="menu"><a class="menu1" href="paginas/criarPersonagem.html">CRIAR PERSONAGENS</a></li>
                             <li class="menu"><a class="menu1" href="paginas/sobre.html">SOBRE</a></li>
                         </ul>
                     </div>
@@ -40,145 +41,11 @@
                 </div>
             </div>
         </section>
-        <hr>
-        <section id="jogabilidade">
-            <div class="corpo-inicial">
-                <div class="paragrafo-inicial">
-                    <h1 id="titulo-jogabilidade">Jogabilidade</h1><br>
-                    <p id="paragrafo-sec-inferior">A batalha é realizada em um cenário fixo no qual podem ser alocados até oito jogadores, sendo que só pode haver um personagem de cada nação. O cenário é fixo porque a batalha inteira ocorre neste único cenário escolhido. Dentre os
-                        cenários possíveis, o jogo pode definir qualquer uma das oito casas das nações. <br> Não existem alianças e “amizades” entre os personagens, portanto eles se enfrentam em duelos de um contra o outro em cada rodada e o vencedor
-                        avança para a próxima rodada. No início da rodada, os personagens são distribuídos aleatoriamente em pares para realizarem a batalha e, caso a quantidade de personagens na batalha seja ímpar, um deles ficará fora da batalha e se
-                        classificará automaticamente para a rodada seguinte. Os vencedores de uma rodada são novamente distribuídos aleatoriamente para se enfrentarem em uma nova batalha. As rodadas são repetidas de acordo com a quantidade restante de
-                        personagens na arena, até que ocorra a batalha final e seja definido um personagem como o vencedor. O jogador que “sobrou” na rodada anterior não pode sobrar novamente na rodada seguinte. A Figura 1 exemplifica um cenário com cinco
-                        jogadores
-                    </p>
-                    <h1 id="titulo-personagens">Personagens</h1><br>
-                    <p id="paragrafo-sec-inferior2">
-                        O jogo de batalha entre personagens baseados na Terra-Média que é o mundo do Senhor dos Anéis. A batalha ocorre por turnos de forma automática no formato de todos contra todos, considerando as características dos personagens. Cada personagem é de uma
-                        nação e possui 5 habilidades, conforme descrito a seguir. As habilidades que os personagens possuem são força, velocidade, precisão, armadura e recuperação. Além da nacionalidade e das 5 habilidades, o personagem possui seus pontos
-                        de energia e um nome para identificá-lo ao longo de suas interações no jogo. No início do jogo, o personagem possui 100 pontos de energia e outros 100 pontos de habilidades que devem ser distribuídos entre as habilidades da forma
-                        que o jogador preferir.
-                    </p>
-                    <ul id="lista-personagens">
-                        <li>● Força: a capacidade que o personagem possui de infringir danos no adversário no combate a curta distância;</li>
-                        <li>● Precisão: a precisão denota a capacidade na qual o personagem tem para infringir danos no adversário à longa distância;</li>
-                        <li>● Velocidade: o tempo no qual o personagem leva para se aproximar do adversário;</li>
-                        <li>● Armadura: o quanto reduz o impacto dos ataques do adversário, independente da distância na qual os ataques são realizados;</li>
-                        <li>● Recuperação: a capacidade de recuperar pontos para a próxima batalha.</li>
-                    </ul>
-                    <h1 id="titulo-nacao">Nações</h1>
-                    <p id="paragrafo-nacoes">Neste jogo, foram selecionadas as seguintes nações da Terra-Média: Orc Snaga, Uruk-hai, Cavaleiro de Rohan, Guerreiro de Gondor, Hobbit, Elfo da Floresta, Elfo de Lothlórien e anão. A casa de cada nação é, respectivamente, Cirith Ungol,
-                        Portão Negro, Abismo de Helm, Minas Tirith, O Condado, Floresta das Trevas ou Mirkwood, Caras Galadhon ou Cidade das Árvores e Colinas de Ferro. A Tabela 1 descreve a ligação entre cada nação e a sua casa</p>
-        </section>
-        <hr>
-        <section id="criar-personagem">
-            <div id="div-criar-personagem">
-                <div id="checkLabel">
-                    <input type="checkbox" name="" id="check1">
-                    <label for="check1">Incluir este personagem na batalha</label>
-                </div>
-                <div id="nome">
-                    <label for="name1">Nome:</label>
-                    <input type="text" name="" id="name1">
-                </div>
-                <fieldset id="radios">
-                    <div id="radio1">
-                        <div>
-                            <input type="radio" id="anao" name="nacao" value="anao" checked>
-                            <label for="anao">Anão</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="hobbit" name="nacao" value="hobbit">
-                            <label for="hobbit">Hobbit</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="cavaleiro" name="nacao" value="cavaleiro">
-                            <label for="cavaleiro">Cavaleiro de Rohan</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="guerreiro" name="nacao" value="guerreiro">
-                            <label for="guerreiro">Guerreiro de Gondor</label>
-                        </div>
-                    </div>
-                    <div id="radio2">
-                        <div>
-                            <input type="radio" id="elfoF" name="nacao" value="elfoF">
-                            <label for="elfoF">Elfo da Floresta</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="elfoL" name="nacao" value="elfoL">
-                            <label for="elfoL">Elfo de Lothlórien</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="orc" name="nacao" value="orc">
-                            <label for="orc">Orc Snaga</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="uruk" name="nacao" value="uruk">
-                            <label for="uruk">Uruk-hai</label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset id="habilidades">
-                    <div>
-                        <div id="div-forca">
-                            <label for="forca">Força</label>
-                            <input type="number" name="" id="forca">
-                        </div>
-                        <div id="div-precisao">
-                            <label for="precisao">Precisão</label>
-                            <input type="number" name="" id="precisao">
-                        </div>
-                        <div id="div-velocidade">
-                            <label for="velocidade">Velocidade</label>
-                            <input type="number" name="" id="velocidade">
-                        </div>
-                        <div id="div-armadura">
-                            <label for="armadura">Armadura</label>
-                            <input type="number" name="" id="armadura">
-                        </div>
-                        <div id="div-recuperacao">
-                            <label for="recuperacao">Recuperação</label>
-                            <input type="number" name="" id="recuperacao">
-                        </div>
-                    </div>
-                </fieldset>
-                <input id="btn-criar-personagem" type="button" value="Criar Personagem">
-
-
-            </div>
-            <button id="add" onclick="duplicarCampos()">Adicionar</button>
-            <button id="remover" onclick="removerCampos()">Remover</button>
-        </section>
-        <section id="destino" class="aparecer">
-
-        </section>
-        </div>
-        <script>
-            function duplicarCampos() {
-
-                var destino = document.getElementById('destino');
-                destino.classList.remove('aparecer');
-
-                var clone = document.getElementById('criar-personagem').cloneNode(true);
-
-                destino.append(clone);
-
-                var camposClonados = clone.querySelectorAll("imput label div h1");
-                console.log(camposClonados)
-
-                for (i = 0; i < camposClonados.length; i++) {
-                    camposClonados[i].value = '';
-                }
-
-            }
-
-            function removerCampos() {
-                var node1 = document.getElementById('destino');
-                node1.removeChild(node1.childNodes[0]);
-
-            }
-        </script>
+    </div>
+    <footer id="rodape">
+        <h4 id="rodape-h4">Cursos de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)</h4>
+        <p id="rodape-p">todos os direitos reservados. (terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">tolkien Enterprises</a>).</p>
+    </footer>
 </body>
 
 </html>
