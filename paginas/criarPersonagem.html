@@ -1,15 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../estilo.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <title>Criar Personagens</title>
 </head>
 
 <body>
+    <header>
+        <div class="header-principal">
+            <div class="header">
+                <nav id="nav-header">
+                    <div class="menus">
+                        <span class="fotoNavLateral"><img class="fotoNavLateral1" src="../assets/download.png"/></span>
+                        <ul id="lista-header">
+                            <li class="menu"><a class="menu1" href="../index.html">INICIO</a></li>
+                            <li class="menu"><a class="menu1" href="personagens.html">JOGABILIDADE E PERSONAGENS</a></li>
+                            <li class="menu"><a class="menu1" href="criarPersonagem.html">CRIAR PERSONAGENS</a></li>
+                            <li class="menu"><a class="menu1" href="sobre.html">SOBRE</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="criar-personagem">
+        <h1 id="criar-personagem-h1">Criação de Personagens</h1>
+        <div id="div-criar-personagem">
+            <div id="checkLabel">
+                <input type="checkbox" name="" id="check1">
+                <label for="check1">Incluir este personagem na batalha</label>
+            </div>
+            <div id="nome">
+                <label for="name1">Nome:</label>
+                <input type="text" name="" id="name1">
+            </div>
+            <fieldset id="radios">
+                <div id="radio1">
+                    <div>
+                        <input type="radio" id="anao" name="nacao" value="anao" checked>
+                        <label for="anao">Anão</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hobbit" name="nacao" value="hobbit">
+                        <label for="hobbit">Hobbit</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cavaleiro" name="nacao" value="cavaleiro">
+                        <label for="cavaleiro">Cavaleiro de Rohan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="guerreiro" name="nacao" value="guerreiro">
+                        <label for="guerreiro">Guerreiro de Gondor</label>
+                    </div>
+                </div>
+                <div id="radio2">
+                    <div>
+                        <input type="radio" id="elfoF" name="nacao" value="elfoF">
+                        <label for="elfoF">Elfo da Floresta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="elfoL" name="nacao" value="elfoL">
+                        <label for="elfoL">Elfo de Lothlórien</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="orc" name="nacao" value="orc">
+                        <label for="orc">Orc Snaga</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="uruk" name="nacao" value="uruk">
+                        <label for="uruk">Uruk-hai</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset id="habilidades">
+                <div>
+                    <div id="div-forca">
+                        <label for="forca">Força</label>
+                        <input type="number" name="" id="forca">
+                    </div>
+                    <div id="div-precisao">
+                        <label for="precisao">Precisão</label>
+                        <input type="number" name="" id="precisao">
+                    </div>
+                    <div id="div-velocidade">
+                        <label for="velocidade">Velocidade</label>
+                        <input type="number" name="" id="velocidade">
+                    </div>
+                    <div id="div-armadura">
+                        <label for="armadura">Armadura</label>
+                        <input type="number" name="" id="armadura">
+                    </div>
+                    <div id="div-recuperacao">
+                        <label for="recuperacao">Recuperação</label>
+                        <input type="number" name="" id="recuperacao">
+                    </div>
+                </div>
+            </fieldset>
+            <input id="btn-criar-personagem" type="button" value="Criar Personagem">
 
+
+        </div>
+        <button id="add" onclick="duplicarCampos()">Adicionar</button>
+        <button id="remover" onclick="removerCampos()">Remover</button>
+    </section>
+    <section id="destino" class="aparecer">
+
+    </section>
+    <footer id="rodape">
+        <h4 id="rodape-h4">Cursos de TI da Estácio de Brasília em 2022.1 (TIEB 2022.1)</h4>
+        <p id="rodape-p">todos os direitos reservados. (terra-Média, locais e personagens são direitos de <a href="https://www.middleearth.com/home.html">tolkien Enterprises</a>).</p>
+    </footer>
+    <script src="../principal.js"></script>
 </body>
 
 </html>
