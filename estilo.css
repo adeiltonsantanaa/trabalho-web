@@ -86,10 +86,11 @@ p {
 
 #primeiroParagrafo {
     position: absolute;
-    left: 30%;
+    left: 28%;
     top: 19%;
-    width: 42%;
     font-family: 'Libre Baskerville', serif;
+    font-size: 1.3rem;
+    width: 45%;
 }
 
 h1 {
@@ -110,88 +111,22 @@ iframe {
     position: absolute;
     top: 10%;
     left: 29%;
+    font-size: 3rem;
     text-align: center;
 }
-
-#paragrafo-sec-inferior {
-    position: absolute;
-    width: 40%;
-    left: 5%;
-    top: 120%;
-}
-
-#paragrafo-sec-inferior2 {
-    position: absolute;
-    width: 40%;
-    right: 5%;
-    top: 120%;
-}
-
-#titulo-jogabilidade {
-    position: absolute;
-    left: 18%;
-    top: 110%;
-}
-
-#titulo-personagens {
-    position: absolute;
-    right: 18%;
-    top: 110%;
-}
-
-#lista-personagens {
-    position: absolute;
-    width: 40%;
-    right: 5%;
-    top: 148%;
-}
-
-#titulo-nacao {
-    position: absolute;
-    left: 21%;
-    top: 164%;
-}
-
-#paragrafo-nacoes {
-    position: absolute;
-    width: 40%;
-    left: 5%;
-    top: 174%;
-}
-
-
-/*
-#div-criar-personagem {
-    position: absolute;
-    width: 50%;
-    top: 230%;
-    height: 50%;
-    background-color: blue;
-    left: 25%;
-}
-
-#checkLabel {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-#nome {
-    position: absolute;
-    top: 21%;
-    left: 5%;
-}*/
 
 #div-criar-personagem {
     position: relative;
     height: 50%;
     width: 50%;
     top: 20%;
-    /* background-color: blue; */
     left: 25%;
-    border-radius: 20px;
-    /* border: 4px solid #000000; */
-    background-color: rgb(106, 41, 1, 0.8);
+    background: rgba(252, 85, 0, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(252, 85, 0, 0.78);
 }
 
 #checkLabel {
@@ -285,4 +220,170 @@ iframe {
 
 .aparecer {
     display: none;
+}
+
+#criar-personagem-h1 {
+    position: absolute;
+    top: 10%;
+    font-size: 3rem;
+    width: 25%;
+    left: 38%;
+}
+
+
+/*JOGABILIDADE*/
+
+#jogabilidade-div {
+    position: absolute;
+    width: 100%;
+    HEIGHT: 47%;
+}
+
+#titulo-jogabilidade {
+    position: absolute;
+    left: 18%;
+    top: 20%;
+    font-size: 3rem;
+}
+
+#paragrafo-sec-inferior {
+    position: absolute;
+    width: 45%;
+    left: 3%;
+    top: 43%;
+    font-size: 1.3rem;
+}
+
+#paragrafo-sec-inferior2 {
+    position: absolute;
+    width: 45%;
+    right: 3%;
+    top: 43%;
+    font-size: 1.3rem;
+}
+
+#titulo-personagens {
+    position: absolute;
+    top: 20%;
+    font-size: 3rem;
+    right: 18%;
+}
+
+#lista-personagens {
+    position: absolute;
+    width: 45%;
+    right: 3%;
+    top: 95%;
+    font-size: 1.3rem;
+}
+
+#titulo-nacao {
+    position: absolute;
+    left: 21%;
+    top: 135%;
+    font-size: 3rem;
+}
+
+#paragrafo-nacoes {
+    position: absolute;
+    width: 45%;
+    left: 3%;
+    top: 155%;
+    font-size: 1.3rem;
+}
+
+.fotoNavLateral1 {
+    width: 5%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    top: 8%;
+}
+
+#rodape {
+    position: absolute;
+    bottom: 0%;
+    padding: 0.1%;
+    background-color: black;
+    width: 100%;
+}
+
+#rodape-p {
+    padding: 0;
+    text-align: center;
+}
+
+#rodape-h4 {
+    text-align: center;
+}
+
+#fotoAutor,
+.fotoAutor1 {
+    width: 20%;
+    border-radius: 30px;
+    position: absolute;
+    height: 50%;
+    object-fit: cover;
+    object-position: 0px 70%;
+    border: 2px solid #fff;
+    top: 10%;
+    right: 5%;
+}
+
+#container-sobre {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 20%;
+    top: 16%;
+    background: rgba(252, 85, 0, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(252, 85, 0, 0.78);
+}
+
+#sobre-h1 {
+    position: absolute;
+    left: 42%;
+    top: 8%;
+    font-size: 3rem;
+}
+
+#nome-h2 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+#curso-h3 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+#sobre-p {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 34%;
+}
+
+#turma-h3 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+#semestre-h3 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 55%;
 }
