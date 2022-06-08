@@ -1,23 +1,40 @@
+var controle = 0;
+var destino = document.getElementById('destino');
+
 function duplicarCampos() {
 
-    var destino = document.getElementById('destino');
-    destino.classList.remove('aparecer');
+    if (controle < 7) {
+        destino.classList.remove('aparecer');
 
-    var clone = document.getElementById('criar-personagem').cloneNode(true);
+        var clone = document.getElementById('criar-personagem').cloneNode(true);
 
-    destino.append(clone);
+        destino.append(clone);
 
-    var camposClonados = clone.querySelectorAll("imput label div h1");
-    console.log(camposClonados)
+        var camposClonados = clone.querySelectorAll("imput label div h1");
+        console.log(camposClonados)
 
-    for (i = 0; i < camposClonados.length; i++) {
-        camposClonados[i].value = '';
+        for (i = 0; i < camposClonados.length; i++) {
+            camposClonados[i].value = '';
+        }
+        controle++
+        console.log("++" + controle)
+    } else {
+        console.log("Não é possível adicionar mais que 8")
     }
+
+
 
 }
 
 function removerCampos() {
-    var node1 = document.getElementById('destino');
-    node1.removeChild(node1.childNodes[0]);
 
+    if (controle != 0 || controle > 0) {
+        var node1 = document.getElementById('destino');
+        node1.removeChild(node1.childNodes[0]);
+        controle--
+        console.log("--" + controle)
+
+    } else if (controle < 1) {
+        destino.classList.add('aparecer');
+    }
 }
