@@ -11,13 +11,11 @@ function duplicarCampos() {
         destino.append(clone);
 
         var camposClonados = clone.querySelectorAll("imput label div h1");
-        console.log(camposClonados)
 
         for (i = 0; i < camposClonados.length; i++) {
             camposClonados[i].value = '';
         }
         controle++
-        console.log("++" + controle)
     } else {
         console.log("Não é possível adicionar mais que 8")
     }
@@ -32,7 +30,6 @@ function removerCampos() {
         var node1 = document.getElementById('destino');
         node1.removeChild(node1.childNodes[0]);
         controle--
-        console.log("--" + controle)
 
     } else if (controle < 1) {
         destino.classList.add('aparecer');

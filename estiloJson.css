@@ -1,0 +1,50 @@
+.divJson {
+    /* height: 10%;
+    width: 100%;*/
+    position: relative;
+    top: 14%;
+    left: 21%;
+    width: 58%;
+    height: 72%;
+    background: rgba(252, 85, 0, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(252, 85, 0, 0.78);
+}
+
+.imgJson {
+    position: relative;
+    left: 44%;
+    top: 25%;
+    cursor: pointer;
+    width: 15%;
+}
+
+.h1Json,
+.h3Json,
+.p1Json,
+.p2Json {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    padding-bottom: 1%!important;
+}
+
+.p1Json,
+.p2Json {
+    font-size: larger;
+}
+
+.h1Json {
+    top: 10%!important;
+}
+
+.h3Json {
+    top: 15%!important;
+}
+
+.sectionJson {
+    background-image: url(assets/Hellfire_abstract_illustration_2019_Design_Photo\ Wallpaper_1920x1080[10wallpaper.com].jpg);
+}
